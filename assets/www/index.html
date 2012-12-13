@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Page Title</title> 
+<script type="text/javascript" charset="utf-8" src="js/cordova-2.2.0.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.2.0.min.js"></script>
+<script type="text/javascript" src="js/cordova-2.2.0.js"></script>
+<script type="text/javascript" src="js/funcions.js"></script>
+</head> 
+<body> 
+
+<!-- Start of first page -->
+<div data-role="page" id="indexpage">
+
+	<div data-role="header">
+		<h1>Albert Casadess&uacute;s</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" >	
+		<ul data-role="listview" data-split-theme="d" id="llistatPosts">
+		<li>There's no posts</li>
+		</ul>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Feed reader</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+<!-- Start of second page -->
+<div data-role="page" id="bar">
+
+	<div data-role="header">
+		<h1>Bar</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+    
+	</div><!-- /content -->
+	<div data-role="footer">
+		<h4>Feed reader</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<!-- Error page -->
+<div data-role="page" id="errorpage">
+
+	<div data-role="header">
+		<h1>Error</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+    	Connection error.Requested feeds can not be loaded.
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+<!-- Loading page -->
+<div data-role="page" id="loadingpage">
+
+	<div data-role="header">
+		<h1>Loading...</h1>
+	</div><!-- /header -->
+	<div data-role="content">
+    	This is the first time you use this app.<br>Requested feeds are being loaded.
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4></h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>
